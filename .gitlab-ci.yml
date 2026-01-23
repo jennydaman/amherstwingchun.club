@@ -1,5 +1,7 @@
 pages:
-  only: [ master ]
+  rules:
+    - if: $CI_COMMIT_BRANCH == "main"
+      changes: [ public/* ]
   script:
     - ls -la public
   pages: true
