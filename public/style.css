@@ -69,6 +69,11 @@ dd {
   }
 }
 
+.yt-embed {
+  width: 100%;
+  aspect-ratio: 500 / 315;
+}
+
 @media only screen and (min-width: 800px) {
   #photo {
     width: 300px;
@@ -79,5 +84,10 @@ dd {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .yt-embed {
+    width: 500px;
+    height: 315px;
   }
 }
