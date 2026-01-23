@@ -1,6 +1,6 @@
 pages:
   rules:
-    - if: $CI_COMMIT_BRANCH == "main"
+    - if: $CI_COMMIT_BRANCH == "master"
       changes: [ public/* ]
   script:
     - ls -la public
