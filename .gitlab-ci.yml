@@ -1,0 +1,5 @@
+pages:
+  only: [ master ]
+  script:
+    - ls -la public
+  pages: true
