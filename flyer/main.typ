@@ -29,8 +29,8 @@ _Learn *kung fu*#sub(baseline: 9pt, text(rgb("#777"), "^"))! Join the_
     "No problem",
     "Don't want to spend money? ..",
     "No problem",
-    "Want to punch Nazis? ...............",
-    "Learn good form"
+    // "Want to punch Nazis? ...............",
+    // "Learn good form"
   )
   
 ]
