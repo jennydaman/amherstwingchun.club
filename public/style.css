@@ -16,15 +16,6 @@ h2 {
   font-size: 110%;
 }
 
-#outer-body {
-  display: flex;
-  justify-content: center;
-}
-
-#inner-body {
-  margin: 1em;
-}
-
 #photo {
   width: 80%;
   margin: 1em;
@@ -32,7 +23,6 @@ h2 {
 
 main, section {
   margin: 0 0.5rem;
-  max-width: 720px;
 }
 
 dt {
@@ -89,10 +79,15 @@ summary:after {
     float: right;
   }
 
-  body {
+  html {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  body {
+    max-width: 720px;
   }
 
   .yt-embed {
