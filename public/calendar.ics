@@ -33,7 +33,7 @@ RRULE:FREQ=WEEKLY;BYDAY=SA;COUNT=8
 DTEND;TZID=America/New_York:20260418T110000
 SUMMARY:Wing Chun Club
 URL:https://amherstwingchun.club/
-DESCRIPTION:Free kung fu class at the Unitarian Meetinghouse in Amherst Center.
+DESCRIPTION:Free kung fu class at the Unitarian Meetinghouse in Amherst Center. Room: Social Hall.
 LOCATION:121 N Pleasant St\, Amherst\, MA 01002
 BEGIN:VALARM
 ACTION:DISPLAY
