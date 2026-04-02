@@ -340,9 +340,9 @@
 
 <script type="text/javascript">
   document.querySelectorAll('video').forEach((video) => {
-    video.addEventListener('error', (...e) => {
+    video.addEventListener('error', (e) => {
       const src = video.src ?? [...video.children].map((s) => s.src).find((s) => !!s);
-      video.after(`Error with video: ${video.src}. Details: ${JSON.stringify(e)}`);
+      video.after(`Error with video: ${video.src}. Details: ${e}`);
     });
   });
 </script>
