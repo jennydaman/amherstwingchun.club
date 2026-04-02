@@ -331,5 +331,13 @@
     </dd>
   </dl>
 </section>
+
+<script type="text/javascript">
+  document.querySelectorAll('video').forEach((video) => {
+    video.addEventListener('error', (...e) => {
+      video.after(`Error with video: ${video.src}. Details: ${JSON.stringify(e)}`);
+    });
+  });
+</script>
 </body>
 </html>
