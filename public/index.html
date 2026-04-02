@@ -160,8 +160,12 @@
       </p>
 
       <div class="centered">
-        <video id="chain-punch" src="chain_punch.webm" type="video/webm" width="300" height="300" controls loop muted playsinline loading="lazy"></video>
-        <video id="lapda" src="lapda.webm" type="video/webm" width="300" height="300" controls loop muted playsinline loading="lazy"></video>
+        <video id="chain-punch" width="300" height="300" controls loop muted playsinline loading="lazy">
+          <source src="chain_punch.webm" type="video/webm" />
+        </video>
+        <video id="lapda"       width="300" height="300" controls loop muted playsinline loading="lazy">
+          <source src="lapda.webm" type="video/webm" />
+        </video>
       </div>
 
       <script type="text/javascript">
@@ -218,7 +222,9 @@
       such as &ldquo;lap sao&rdquo;:
 
       <div class="centered">
-        <video src="lapsao.webm" type="video/webm" width="320" height="569" controls muted playsinline loading="lazy"></video>
+        <video width="320" height="569" controls muted playsinline loading="lazy">
+          <source src="lapsao.webm" type="video/webm" />
+        </video>
       </div>
     </details>
   </dd>
@@ -335,6 +341,7 @@
 <script type="text/javascript">
   document.querySelectorAll('video').forEach((video) => {
     video.addEventListener('error', (...e) => {
+      const src = video.src ?? [...video.children].map((s) => s.src).find((s) => !!s);
       video.after(`Error with video: ${video.src}. Details: ${JSON.stringify(e)}`);
     });
   });
