@@ -356,12 +356,7 @@
   document.querySelectorAll('video').forEach((video) => {
     video.addEventListener('error', (e) => {
       const src = video.src || [...video.children].map((s) => s.src).find((s) => !!s);
-      const msg = JSON.stringify({
-        message: e.message,
-        toString: e.toString && e.toString(),
-        stringify: e
-      });
-      video.after(`Error with video: ${video.src}. Details: ${msg}`);
+      video.after(`Error playing video: ${video.src}`);
     });
   });
 </script>
