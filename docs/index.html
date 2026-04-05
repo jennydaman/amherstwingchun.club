@@ -355,7 +355,7 @@
 <script type="text/javascript">
   document.querySelectorAll('video').forEach((video) => {
     video.addEventListener('error', (e) => {
-      const src = video.src ?? [...video.children].map((s) => s.src).find((s) => !!s);
+      const src = video.src || [...video.children].map((s) => s.src).find((s) => !!s);
       const msg = JSON.stringify({
         message: e.message,
         toString: e.toString && e.toString(),
