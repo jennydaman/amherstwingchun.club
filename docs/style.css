@@ -76,13 +76,28 @@ summary:after {
 .centered {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 1em;
 }
 
-.centered > * {
-  margin: 1px;
+blockquote {
+  font-style: italic;
+  border-left: 1px solid #d8d8d8;
+  padding: 0.5em 0 0.5em 1em;
+  margin-left: 0.5em;
+}
+
+@media (prefers-color-scheme: dark) {
+  blockquote {
+    border-color: #4f4f4f;
+  }
+}
+
+.float-left, .float-right {
+  width: 100%;
 }
 
 @media only screen and (min-width: 800px) {
@@ -109,5 +124,23 @@ summary:after {
 
   .centered {
     flex-direction: row;
+  }
+
+  .float-left {
+    margin: 0.5em 0.5em 0.5em 0;
+    float: left;
+    width: 45%;
+  }
+
+  .float-clear::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .float-right {
+    margin: 0 0 0.5em 0.5em;
+    float: right;
+    width: 45%;
   }
 }
