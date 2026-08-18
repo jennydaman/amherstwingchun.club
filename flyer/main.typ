@@ -10,44 +10,61 @@ _Free community martial arts class_
 #show heading: set block(above: 0.5em)
 = Amherst Wing Chun Club
 
+#place(
+  dx: 3.5in,
+  dy: 0.125in,
+  image("calligraphy_yongchun_horizontal.png", height: 1in)
+)
+
 #box(width: 100%)[
-  #align(right, move(dx: 10pt, dy: 60pt, image("image.jpg", width: 80%)))
+  #align(right, move(dx: 10pt, dy: 70pt, image("image.png", width: 75%)))
   #set text(size: 18pt)
+
   #place(top, dy: 20pt, box(width: 45%)[
     Learn kung fu, _for free_!
 
     "Wing chun" is a Chinese martial art focused on simplicity and speed.
 
     #set par(leading: 0.75em)
-    - Basic self#linebreak()-defense
     - Joint strength #linebreak() and balance
+    - Basic self#linebreak()-defense
     - Engage with #linebreak() Chinese culture
   ])
-
-  #v(-25pt)
-  Casual, beginner-level classes
-  #linebreak()
-  begin\* in April.
-  #linebreak()
-  #text(size: 12pt, "*Always OK to join late!")
-  // #set text(size: 14pt)
-  // #table(
-  //   columns: (auto, auto),
-  //   stroke: none,
-  //   "Not flexible? ................................",
-  //   "No problem",
-  //   "Do you trip on flat ground? .....",
-  //   "No problem",
-  //   "Don't want to spend money? ..",
-  //   "No problem",
-  //   // "Want to punch Nazis? ...............",
-  //   // "Learn good form"
-  // )
 ]
 
-#set text(size: 22pt)
-#set align(center)
+#v(-2.5em)
+#set text(size: 18pt)
+#linebreak()
+Every Saturday, 16:30--18:00 at
+#par(first-line-indent: 1em, hanging-indent: 1em, spacing: 0pt)[
+  20 Dickinson St.
+  #linebreak()
+  Amherst, MA 01002
+]
 
-Interest form $-->$
-#link("https://amherstwingchun.club")
+New class for beginners starting 2026-09-12.
+#linebreak()
+#text(size: 9pt, "*Always OK to join late!")
+
+// #place(
+//   dx: 5.25in, dy: -1in,
+//   image("calligraphy_yongchun.png")
+// )
+
+#set par(spacing: 0pt)
+#set align(center)
+#set text(size: 22pt)
+
+
 #image("qr.svg", height: 2in)
+#link("https://amherstwingchun.club")
+
+// #stack(dir: ltr, spacing: 0.25in)[
+//   #set align(left)
+//   Website:
+//   #linebreak()
+//   #link("https://amherstwingchun.club")
+// ][
+//   #v(-0.375in)
+//   #image("qr.svg", height: 1.75in)
+// ]
