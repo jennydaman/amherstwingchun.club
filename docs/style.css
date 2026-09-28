@@ -90,6 +90,10 @@ blockquote {
   margin-left: 0.5em;
 }
 
+#curriculum td {
+  vertical-align: top;
+}
+
 @media (prefers-color-scheme: dark) {
   blockquote {
     border-color: #4f4f4f;
